@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /kontakt.html
+Disallow: /impressum.html
+Disallow: /datenschutz.html
+Disallow: /php/error.html
+Disallow: /php/erfolg.html
+Disallow: /*.pdf$
+
+Sitemap: https://captcha-mannheim.de//sitemap.xml

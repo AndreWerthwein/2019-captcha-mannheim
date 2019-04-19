@@ -1,0 +1,17 @@
+@import variablen.sass
+
+//Unterdrückung der farbigen Auszeichnung gedrückter Buttons auf mobilen Endgeräten
+a, img
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-tap-highlight-color: rgba (0, 0, 0, 0)
+
+//Unterdrückung der automatisierter Gestaltungsrythmen
+//Unterdrückung des automatischen Schriftgrößen-Zooms unter iOS
+//Später auf Einzel-Elemente beschränken (Buttons, etc.)
+html
+  -webkit-text-size-adjust: none

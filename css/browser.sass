@@ -1,0 +1,35 @@
+@import variablen.sass
+
+// Text-Markierung, User-Selection
+[data-farbschema="Abschnitt Hell"]
+  ::selection
+    background: $farbe-transparent !important
+    color: $farbe-corporate-identity-2 !important
+
+  ::-moz-selection
+    background: $farbe-corporate-identity-2 !important
+    color: $farbe-corporate-identity-2 !important
+
+[data-farbschema="Abschnitt Dunkel"]
+  ::selection
+    background: $farbe-transparent !important
+    color: $farbe-corporate-identity-1 !important
+
+  ::-moz-selection
+    background: $farbe-corporate-identity-2 !important
+    color: $farbe-corporate-identity-1 !important
+
+// Scrollbar
+::-webkit-scrollbar
+  width: 5px
+  height: 5px
+  z-index: 5
+
+::-webkit-scrollbar-track
+  background-color: $farbe-corporate-identity-1
+
+::-webkit-scrollbar-thumb:vertical
+  background: $farbe-corporate-identity-2
+
+::-webkit-scrollbar-thumb:horizontal
+  background: $farbe-corporate-identity-2

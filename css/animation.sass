@@ -1,0 +1,31 @@
+@import variablen.sass
+
+.DropdownAnzeige
+  height: 0px !important
+  -webkit-transition: all 0.6s ease-in
+  -moz-transition: all 0.6s ease-in
+  -o-transition: all 0.6s ease-in
+  transition: all 0.6s ease-in
+
+#OnePagerNavigation > div > section:last-child > ul > li:hover, #OnePagerNavigation > div > section:last-child > ul > li:focus, #OnePagerNavigation > div > section:last-child > ul > li:active
+  background-color: $farbe-corporate-identity-1
+  color: $farbe-corporate-identity-2
+
+#Workshopleiter dt:hover, #Workshopleiter dt:focus, #Workshopleiter dt:active
+  background-color: $farbe-corporate-identity-2 !important
+  color: $farbe-corporate-identity-1 !important
+
+#SponsoringPakete dt:hover, #SponsoringPakete dt:focus, #SponsoringPakete dt:active
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+[data-farbschema="Abschnitt Hell"]
+  a:hover, a:focus, a:active
+    color: $farbe-corporate-identity-2
+
+[data-farbschema="Abschnitt Dunkel"]
+  a:hover, a:focus, a:active
+    color: $farbe-corporate-identity-1
+
+.Kommentar:hover, .Kommentar:focus, .Kommentar:active
+  opacity: 1 !important

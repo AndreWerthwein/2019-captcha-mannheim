@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.andrewerthwein.de/</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/index.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/archiv.html</loc>
+  <lastmod>2019-03-11T16:47:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/biografie.html</loc>
+  <lastmod>2019-03-11T16:47:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/bericht.html</loc>
+  <lastmod>2019-03-11T16:47:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/letterartproject.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/sitemap.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/kontakt.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/impressum.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.andrewerthwein.de/datenschutz.html</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://fat.link.andrewerthwein.de</loc>
+  <lastmod>2019-03-11T16:47:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>
