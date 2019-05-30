@@ -1,0 +1,34 @@
+@import ../variablen.sass
+
+[data-farbschema="Dunkel"]
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+  // User-Selection
+  ::selection
+    background: $farbe-basis-transparent !important
+    color: $farbe-corporate-identity-1 !important
+
+  ::-moz-selection
+    background: $farbe-corporate-identity-2 !important
+    color: $farbe-corporate-identity-1 !important
+
+  // Scrollbars [innerhalb eines DIV-Elements]
+  ::-webkit-scrollbar-track
+    background-color: $farbe-corporate-identity-1
+
+  ::-webkit-scrollbar-thumb:vertical
+    background: $farbe-corporate-identity-2
+
+  ::-webkit-scrollbar-thumb:horizontal
+    background: $farbe-corporate-identity-2
+
+// Hyperlink-Animation
+#Navigation[data-farbschema="Dunkel"]
+  a::before
+    background-color: $farbe-corporate-identity-2
+
+#ArchivNavigation[data-farbschema="Dunkel"]
+  ul > li:hover, ul > li:focus, ul > li:active
+    background-color: $farbe-corporate-identity-2
+    color: $farbe-corporate-identity-1
