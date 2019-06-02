@@ -1,5 +1,16 @@
 @import variablen.sass
 
+// Animation-Klassen
+.Vorschlag
+  opacity: 1 !important
+
+.WorkshopDetails > section
+  height: 500px !important
+
+.WorkshopDetails > section > section
+  // Überschreitet der Text die 500 Pixel, dann muss der Inhalt des Dropdowns scrollbar gemacht werden.
+  overflow-y: auto !important
+
 // Hyperlink-Animation
 a
   position: relative
@@ -59,3 +70,7 @@ a:hover::before, a:active::before, a:focus::before
   -moz-transform: scaleX(1)
   -o-transform: scaleX(1)
   transform: scaleX(1)
+
+// "Nach-Oben"-Button
+#ObenButton:hover, #ObenButton:focus, #ObenButton:active
+  background-color: $farbe-corporate-identity-2

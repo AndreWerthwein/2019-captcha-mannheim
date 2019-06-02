@@ -1,4 +1,4 @@
-var NachObenButton = document.querySelector('#NachOben');
+var NachObenButton = document.querySelector('#ObenButton');
 
 //Ausführen der Funtkion "" sobald im Fenster gescrollt wird.
 window.onscroll = function() {ButtonEinblenden()};
