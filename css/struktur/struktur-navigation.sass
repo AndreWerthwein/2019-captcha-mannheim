@@ -53,6 +53,57 @@
   -o-transition: all 0.4s ease-in
   transition: all 0.4s ease-in
 
+// Responsive Navigation
+#ResponsiveNavigationHeader
+  width: 100vw
+  height: 94.8px
+  padding: 25px 10vw
+  position: fixed
+  top: 0px
+  left: 0px
+  z-index: 10
+  display: flex
+  justify-content: space-between
+  align-items: center
+  display: none
+
+#ResponsiveNavigationHeader > section > img
+  height: 44.8px
+
+#ResponsiveNavigationBurger
+  width: 44.8px
+  height: 44.8px
+  padding: 6px 0px
+
+#ResponsiveNavigationBurger > section
+  width: 44.8px
+  height: 4px
+  transform-origin: center
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+
+#ResponsiveNavigationBurger > section:nth-child(2)
+  margin: calc(20.8px / 2) 0px
+
+#ResponsiveNavigation
+  width: 100vw
+  height: 50vh
+  padding: 25px 10vw
+  position: relative
+  top: -100vh
+  left: 0px
+  -webkit-transition: all 0.6s ease-in
+  -moz-transition: all 0.6s ease-in
+  -o-transition: all 0.6s ease-in
+  transition: all 0.6s ease-in
+
+#ArchivRaster
+  width: 100%
+  display: grid
+  grid-template-columns: auto auto auto auto
+
 // "Nach-Oben"-Button
 #ObenButton
   width: 60px

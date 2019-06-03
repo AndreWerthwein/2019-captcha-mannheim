@@ -71,6 +71,25 @@ a:hover::before, a:active::before, a:focus::before
   -o-transform: scaleX(1)
   transform: scaleX(1)
 
+// Animation des Hamburger-Menüs
+.ResponsiveNavigationKreuz > section:nth-child(2)
+  opacity: 0 !important
+
+.ResponsiveNavigationKreuz > section:first-child
+  -webkit-transform: translateY(14px) rotate(45deg) !important
+  -moz-transform: translateY(14px) rotate(45deg) !important
+  -o-transform: translateY(14px) rotate(45deg) !important
+  transform: translateY(14px) rotate(45deg) !important
+
+.ResponsiveNavigationKreuz > section:last-child
+  -webkit-transform: translateX(1px) translateY(-15px) rotate(-45deg) !important
+  -moz-transform: translateX(1px) translateY(-15px) rotate(-45deg) !important
+  -o-transform: translateX(1px) translateY(-15px) rotate(-45deg) !important
+  transform: translateX(1px) translateY(-15px) rotate(-45deg) !important
+
+.ResponsiveNavigationEinfahren
+  top: 94.8px !important
+
 // "Nach-Oben"-Button
 #ObenButton:hover, #ObenButton:focus, #ObenButton:active
   background-color: $farbe-corporate-identity-2
