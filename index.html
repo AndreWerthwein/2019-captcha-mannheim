@@ -6,7 +6,25 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
   <meta http-equiv="language" content="EN" />
 
-  <title>CAPTCHA Designfestival</title>
+  <!-- Fav- und Touch-Icons -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="fallback-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="universal-touch-icon-60x60-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios6-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-ipad1-ipad2-ipad-mini-non-retina-ios7-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-iphone4+-ipod-touch-retina-ios6-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-iphone4+-ipod-touch-retina-ios7-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-ipad-retina-ios6-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-ipad-retina-ios7-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" sizes="196x196" href="chromeapp-touch-icon-196x196-precomposed.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
 
   <link rel="stylesheet" href="css/reset.min.css">
   <link rel="stylesheet" href="css/browser.min.css">
@@ -21,6 +39,7 @@
   <!-- Font Awesome Icons - Version 5.8.2. - 2019/06 -->
   <link rel="stylesheet" href="css/schriftarten/font-awesome.min.css">
 
+  <title>CAPTCHA Designfestival</title>
 </head>
 
 <body>
@@ -35,7 +54,7 @@
     <div>
       <section data-abschnitt="Workshopleiter">
         <a href="#WorkshopleiterDesignFestival">
-          <h6 class="ScrollingButton" data-sprungziel="WorkshopleiterDesignFestival">Workshops</h6>
+          <h6 class="ScrollingButton" data-sprungziel="GaesteDesignFestival">Workshops</h6>
         </a>
       </section>
       <section>
@@ -55,11 +74,11 @@
   </nav>
   <nav id="ArchivNavigation" data-farbschema="Dunkel">
     <ul>
-      <li><a href="" target="_blank" rel="noopener nofollow noreferrer">2014</a></li>
-      <li><a href="" target="_blank" rel="noopener nofollow noreferrer">2015</a></li>
-      <li><a href="" target="_blank" rel="noopener nofollow noreferrer">2016</a></li>
-      <li><a href="" target="_blank" rel="noopener nofollow noreferrer">2017</a></li>
-      <li><a href="" target="_blank" rel="noopener nofollow noreferrer">2018</a></li>
+      <li><a href="2014-archiv.html" target="_blank" rel="noopener nofollow noreferrer">2014</a></li>
+      <li><a href="2015-archiv.html" target="_blank" rel="noopener nofollow noreferrer">2015</a></li>
+      <li><a href="2016-archiv.html" target="_blank" rel="noopener nofollow noreferrer">2016</a></li>
+      <li><a href="2017-archiv.html" target="_blank" rel="noopener nofollow noreferrer">2017</a></li>
+      <li><a href="2018-archiv.html" target="_blank" rel="noopener nofollow noreferrer">2018</a></li>
     </ul>
   </nav>
 
@@ -67,16 +86,15 @@
     <section>
       <img src="medien/logomitschrift.png" alt="Living-Logo des Captcha Designfestivals in Mannheim" />
     </section>
-    <div id="ResponsiveNavigationBurger">
+    <section id="ResponsiveNavigationBurger">
       <section></section>
       <section></section>
       <section></section>
-    </div>
+    </section>
   </nav>
-
   <nav id="ResponsiveNavigation" data-farbschema="Hell">
-    <a href="#WorkshopleiterDesignFestival">
-      <h6 class="ScrollingButton" data-sprungziel="WorkshopleiterDesignFestival">Workshops</h6>
+    <a href="#GaesteDesignFestival">
+      <h6 class="ScrollingButton" data-sprungziel="GaesteDesignFestival">Workshops</h6>
     </a>
     <a href="open-call.html" target="_blank" rel="noopener nofollow noreferrer">
       <h6>Open Call</h6>
@@ -122,6 +140,7 @@
   <!-- Veranstaltungsdatum - "&mdash;" ist ein fester HTML-Gedanenstrich -->
   <section id="VeranstaltungsDatum" data-farbschema="Hell">
     <h1>September 03 &mdash; September 16</h1>
+    <h1 id="VeranstaltungsDatumResponsiveReduktion">09/03 &mdash; 09/16</h1>
   </section>
 
   <!-- Vorstellung des Design-Festivals -->
@@ -144,7 +163,27 @@
       <hr />
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <table id="KurzUebersichtSymposiumsprecher" class="RedundanteInformation">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Troxler</td>
+            <td>Print</td>
+          </tr>
+          <tr>
+            <td>Brechbühl/Pfäffli</td>
+            <td>Print</td>
+          </tr>
+          <tr>
+            <td>Kuhnlein</td>
+            <td>Interaktiv/Digital</td>
+          </tr>
+          <tr>
+            <td>Klasen</td>
+            <td>Rauminstallation</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div id="Workshops">
       <h6>Workshops</h6>
@@ -153,7 +192,7 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <table id="KurzUebersichtWorkshopleiter">
+      <table id="KurzUebersichtWorkshopleiter" class="RedundanteInformation">
         <thead></thead>
         <tbody>
           <tr>
@@ -190,13 +229,15 @@
   </section>
 
   <!-- Workshopleiter des Design-Festivals -->
-  <section id="WorkshopleiterDesignFestival" data-farbschema="Hell">
+  <section id="GaesteDesignFestival" data-farbschema="Hell">
+    <h6>Symposium Speakers</h6>
+    <hr />
     <div class="Workshop">
       <header>
         <h6>Erich Brechbühl</h6>
       </header>
       <section>
-        <img src="" alt="" />
+        <img src="medien\simoecihlar.png" alt="" />
 
         <section>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -209,7 +250,49 @@
         <h6>Erich Brechbühl</h6>
       </header>
       <section>
-        <img src="" alt="" />
+        <img src="medien\simoecihlar.png" alt="" />
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </section>
+    </div>
+
+    <div class="AbstandSymposiumSprecher"></div>
+    <h6>Workshop Leaders</h6>
+    <hr />
+    <div class="Workshop">
+      <header>
+        <h6>Erich Brechbühl</h6>
+      </header>
+      <section>
+        <img src="medien\simoecihlar.png" alt="" />
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </section>
+    </div>
+
+    <div class="Workshop">
+      <header>
+        <h6>Erich Brechbühl</h6>
+      </header>
+      <section>
+        <img src="medien\simoecihlar.png" alt="" />
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </section>
+    </div>
+
+    <div class="Workshop">
+      <header>
+        <h6>Erich Brechbühl</h6>
+      </header>
+      <section>
+        <img src="medien\simoecihlar.png" alt="" />
 
         <section>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -218,12 +301,12 @@
     </div>
   </section>
 
-  <!-- "Nach-Oben"-Button -->
+  <!-- "Nach-Oben"-Button
   <section id="ObenButton">
     <a href="#Navigation">
       <i class="fa fa-chevron-up"></i>
     </a>
-  </section>
+  </section> -->
 
   <!-- Footer des Design-Festivals -->
   <section id="FooterDesignFestival" data-farbschema="Dunkel">
@@ -259,21 +342,19 @@
       <hr />
 
       <ul>
-        <li><a href="" target="_blank" rel="noopener nofollow noreferrer">Contact</a></li>
-        <li><a href="" target="_blank" rel="noopener nofollow noreferrer">Imprint</a></li>
-        <li><a href="" target="_blank" rel="noopener nofollow noreferrer">Privacy Policy</a></li>
+        <li><a href="kontakt.html" target="_blank" rel="noopener nofollow noreferrer">Contact</a></li>
+        <li><a href="impressum.html" target="_blank" rel="noopener nofollow noreferrer">Imprint</a></li>
+        <li><a href="datenschutz.html" target="_blank" rel="noopener nofollow noreferrer">Privacy Policy</a></li>
       </ul>
-
-      <p>Updated: <time datetime="2019-04-03" pubdate="pubdate">[2019/04/24]</time></p>
     </div>
   </section>
 
   <!-- SCRIPT-->
   <script src="javascript/key-visual-ausrichtung.js"></script>
-  <script src="javascript/navigation/nach-oben.js"></script>
+  <!-- <script src="javascript/navigation/nach-oben.js"></script> -->
   <script src="javascript/navigation/vertikales-scrolling.js"></script>
   <script src="javascript/navigation/responsive-navigation.js"></script>
-  <script src="javascript/Workshop-dropdown.js"></script>
+  <script src="javascript/workshop-dropdown.js"></script>
   <script src="javascript/navigation/archiv-navigation.js"></script>
 
 </html>

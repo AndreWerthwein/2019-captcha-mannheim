@@ -62,3 +62,34 @@ ResponsiveNavigationLogo.addEventListener('click', function(e) {
     ResponsiveNavigationAnzeige = false;
   }
 });
+
+// Vertiakels Scrolling, Interaktion der Responsive Navigation
+var ScrollingButton = document.querySelectorAll('.ScrollingButton');
+
+for (var x = 0; x < ScrollingButton.length; x = x + 1) {
+  ScrollingButton[x].addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector('#ResponsiveNavigation').classList.remove('ResponsiveNavigationEinfahren');
+    document.querySelector('#ResponsiveNavigationBurger').classList.remove('ResponsiveNavigationKreuz');
+    ResponsiveNavigationAnzeige = false;
+
+    var Sprungziel = this.dataset.sprungziel;
+    var NeuePosition = document.querySelector('#' + Sprungziel).offsetTop;
+
+    setTimeout(function() {
+          NeuePosition = NeuePosition - 100;
+
+      document.body.scrollTo({
+          top: NeuePosition,
+          behavior : 'smooth'
+      });
+
+      document.documentElement.scrollTo({
+          top: NeuePosition,
+          behavior : 'smooth'
+      });
+    }, 150);
+
+  });
+}

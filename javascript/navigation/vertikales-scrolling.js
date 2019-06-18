@@ -7,14 +7,19 @@ for (var x = 0; x < ScrollingButton.length; x = x + 1) {
     var Sprungziel = this.dataset.sprungziel;
     var NeuePosition = document.querySelector('#' + Sprungziel).offsetTop;
 
-        document.body.scrollTo({
-            top: NeuePosition,
-            behavior : 'smooth'
-        });
+    setTimeout(function() {
+          NeuePosition = NeuePosition - 100;
 
-        document.documentElement.scrollTo({
-            top: NeuePosition,
-            behavior : 'smooth'
-        });
+      document.body.scrollTo({
+          top: NeuePosition,
+          behavior : 'smooth'
+      });
+
+      document.documentElement.scrollTo({
+          top: NeuePosition,
+          behavior : 'smooth'
+      });
+    }, 150);
+
   });
 }

@@ -29,12 +29,15 @@ hr
   width: 100vw
   padding: 25px
   z-index: 10
-  margin: calc(100vh - (94.8px * 2)) 0px 0px 0px !important
+  margin: calc(100vh - 94.8px) 0px 0px 0px !important
 
 #VeranstaltungsDatum > h1, #VeranstaltungsDatum > h2, #VeranstaltungsDatum > h3, #VeranstaltungsDatum > h4, #VeranstaltungsDatum > h5, #VeranstaltungsDatum > h6
   font-size: 2.8rem
   margin: 0px
   text-align: center
+
+#VeranstaltungsDatumResponsiveReduktion
+  display: none
 
 // Veranstaltungserläuterung -- Veranstaltung Design Festival
 #VorstellungDesignFestival
@@ -45,14 +48,16 @@ hr
   align-items: center
 
 #VorstellungDesignFestival > section:first-child
-  width: calc(80vw * 0.4)
+  width: calc(50% - (25px / 2))
+  display: flex
+  justify-content: space-around
+  align-items: center
 
 #VorstellungDesignFestival > section:first-child > img
   width: 40%
-  margin: 0px 0px 0px calc(60% - 25px)
 
 #VorstellungDesignFestival > section:last-child
-  width: calc(80vw * 0.6)
+  width: calc(50% - (25px / 2))
 
 // Aufbau des Design-Festival
 #AufbauDesignFestival
@@ -68,11 +73,11 @@ hr
 #AufbauDesignFestival > div > h1, #AufbauDesignFestival > div > h2, #AufbauDesignFestival > div > h3, #AufbauDesignFestival > div > h1, #AufbauDesignFestival > div > h4, #AufbauDesignFestival > div > h6
     text-align: center
 
-#KurzUebersichtWorkshopleiter
+#KurzUebersichtWorkshopleiter, #KurzUebersichtSymposiumsprecher
   width: 100%
   margin: 20px 0px 0px 0px
 
-#KurzUebersichtWorkshopleiter > tbody > tr > td
+#KurzUebersichtWorkshopleiter > tbody > tr > td, #KurzUebersichtSymposiumsprecher > tbody > tr > td
   width: 50%
 
 // Gäste-Trenner-Überschrift
@@ -86,9 +91,12 @@ hr
   text-align: center
 
 // Workshopleiter des Design-Festivals
-#WorkshopleiterDesignFestival
+#GaesteDesignFestival
   width: 100vw
   padding: 25px 10vw
+
+#GaesteDesignFestival > h6
+  text-align: center
 
 .Workshop
   width: 100%
@@ -110,18 +118,22 @@ hr
   display: flex
   justify-content: space-between
   align-items: top
-  overflow: hidden
+  overflow-y: auto
   -webkit-transition: all 0.4s ease-in
   -moz-transition: all 0.4s ease-in
   -o-transition: all 0.4s ease-in
   transition: all 0.4s ease-in
 
 .Workshop > section > img
-  width: calc(100% - ((100% / 3) - (50px / 3)))
+  width: calc(50% - (25px / 2))
+  height: auto
 
 .Workshop > section > section
-  width: calc((100% / 3) - (50px / 3))
+  width: calc(50% - (25px / 2))
   padding: 10px
+
+.AbstandSymposiumSprecher
+  height: 40px
 
 // Footer des Design-Festivals
 #FooterDesignFestival
@@ -160,14 +172,14 @@ hr
   margin: 94.8px 0px 0px 0px
 
 #DanksagungTeamDesignFestival > p
-  width: calc(50% - 25px)
+  width: calc(50% - (25px / 2))
 
 // Vorstellung des Teams des Design-Festivals
 #TeamDesignFestival
   width: 100vw
   padding: 25px 10vw
   display: grid
-  grid-template-columns: calc(50% - 12.5px) calc(50% - 12.5px)
+  grid-template-columns: calc(50% - (25px / 2)) calc(50% - (25px / 2))
   grid-gap: 25px
 
 .TeamKontakt
