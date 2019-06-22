@@ -1,5 +1,5 @@
 var DropdownHeader = document.querySelectorAll('.Workshop  > header');
-var DropdownAnzeige = false;
+var DropdownAnzeige;
 
 // Funktion zur Reduktion aller Workshop-Dropdown-Elemente - Schutz gegen Fehler
 function AlleDropdownsReduzieren() {
@@ -16,15 +16,15 @@ for (var x = 0; x < DropdownHeader.length; x = x + 1) {
 
     // Das übergeordnete Element, mit der Klasse "Workshop" auswählen
     var AktuellesDropdownElement = this.closest('.Workshop');
-
+    var AktuellerDropdownHeader = this.innerText;
     // Wird das Dropdown angezeigt, ...
-    if (DropdownAnzeige === false) {
+    if (DropdownAnzeige != AktuellerDropdownHeader) {
       // Wenn nein, dann ...
       AlleDropdownsReduzieren(); // Fehler-Prävention
       // Aktuelles Dropdown anzeigen
       AktuellesDropdownElement.classList.add('WorkshopDetails');
-      DropdownAnzeige = true;
-    } else {
+      DropdownAnzeige = this.innerText;
+    } else if (DropdownAnzeige === AktuellerDropdownHeader) {
       // Wenn ja, aktuelles/alle anderen Dropdown-Elemente reduzieren
       AlleDropdownsReduzieren();
       DropdownAnzeige = false;
