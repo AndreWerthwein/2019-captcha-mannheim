@@ -1,12 +1,12 @@
 @import ../variablen.sass
 
 // Impressum-Kontakt
-#ImpressumKontakt
+.Kontakt
   width: 100vw
   padding: 25px 10vw
   margin: 94.8px 0px 0px 0px
 
-#ImpressumKontakt > div
+.Kontakt > div
   width: calc(50% - (25px / 2))
 
 // Imresspum-Raster
@@ -22,3 +22,16 @@
 
 #Impressum > div > h1, #Impressum > div > h2, #Impressum > div > h3, #Impressum > div > h1, #Impressum > div > h4, #Impressum > div > h6
     text-align: center
+
+.Datenschutz
+  width: 100vw
+  padding: 25px 10vw
+
+.Datenschutz > div:not(.ZweiSpalten)
+  width: calc(50% - 12.5px)
+
+.Betonung
+  width: 100% !important
+
+.Datenschutz > div:not(:first-child)
+  margin: 25px 0px 0px 0px
