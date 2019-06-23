@@ -34,12 +34,13 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
   var FensterBreite = window.innerWidth;
   if (FensterHoehe > FensterBreite) {
     KeyVisual.src = "medien/keyvisual-hochformat.jpg";
-    KeyVisual.style.width = "auto";
+    // KeyVisual.style.width = "auto";
     KeyVisual.style.height= "calc(100vh - (2 * 94.8px))";
 
     KeyVisual.style.marginTop = 94.8 + "px";
-
+    var FensterBreite = window.innerWidth;
     console.log("Fenstergröße: " + FensterBreite);
+    KeyVisual = document.querySelector('#KeyVisual > img');
     console.log("Key-Visual-Größe: " + KeyVisual.clientWidth);
 
     if (FensterBreite < KeyVisual.offsetWidth) {
