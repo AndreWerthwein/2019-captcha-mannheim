@@ -263,10 +263,18 @@ hr
   grid-gap: 25px
 
 .TeamKontakt
-  width: 100%
+  width: 60%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
 
-.TeamKontakt > tbody > tr > td:first-child
-  width: 30%
+.TeamKontakt > p
+  width: calc(50% - 12.5px)
+  flex: 0 0 auto
+  margin: 0px
+  word-break: keep-all
+  white-space: nowrap
 
 .ZweiSpalten
   width: 100%
