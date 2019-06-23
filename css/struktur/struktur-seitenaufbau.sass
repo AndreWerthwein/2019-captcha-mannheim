@@ -32,6 +32,10 @@ hr
   position: fixed
   top: 0px
   left: 0px
+  background-image: url('../medien/keyvisual-querformat.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
   overflow: hidden
   background-color: $farbe-corporate-identity-1
   z-index: -1 !important
@@ -170,10 +174,12 @@ hr
 // Open-Call
 #OpenCallVideoInformation
   width: 100vw
+  padding: 0px
   margin: 94.8px 0px 0px 0px
   display: flex
   justify-content: space-between
   align-items: top
+  flex-wrap: wrap
 
 #OpenCallVideoInformation > section:first-child
   width: calc(100vh - 94.8px)
@@ -198,6 +204,7 @@ hr
 .PlayScreen, #OpenCallVideoInformation > section > video
   width: calc(100vh - 94.8px)
   height: calc(100vh - 94.8px)
+  z-index: -1
 
 #OpenCallVideoInformation > section:last-child
   padding: 25px
