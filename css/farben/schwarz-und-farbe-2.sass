@@ -1,0 +1,74 @@
+@import ../variablen.sass
+
+[data-farbschema="Schwarz und Farbe 2"]
+  background-color: §basis-farbe-schwarz !important
+  color: $farbe-corporate-identity-2 !important
+
+  // User-Selection
+  ::selection
+    background: $farbe-basis-transparent !important
+    color: §basis-farbe-schwarz !important
+
+  ::-moz-selection
+    background: §basis-farbe-schwarz !important
+    color: §basis-farbe-schwarz !important
+
+  // Scrollbars [innerhalb eines DIV-Elements]
+  ::-webkit-scrollbar-track
+    background-color: §basis-farbe-schwarz
+
+  ::-webkit-scrollbar-thumb:vertical
+    background: $farbe-corporate-identity-2
+
+  ::-webkit-scrollbar-thumb:horizontal
+    background: $farbe-corporate-identity-2
+
+  hr
+    background-color: $farbe-corporate-identity-2
+
+  .Workshop > header
+    background-color: $farbe-corporate-identity-2
+    color: §basis-farbe-schwarz
+
+  .Workshop > header:hover, .Workshop > header:focus, .Workshop > header:active
+    background-color: §basis-farbe-schwarz
+    color: $farbe-corporate-identity-2
+
+  .Workshop > section
+    background-color: §basis-farbe-schwarz
+    color: $farbe-corporate-identity-2
+
+  .fa, .fas, .fab
+    color: $farbe-corporate-identity-2 !important
+
+  .PlayScreen > .fas
+    color: §basis-farbe-schwarz !important
+
+  .Button
+    background-color: $farbe-corporate-identity-2
+    color: §basis-farbe-schwarz
+
+  .Button:hover, .Button:focus, .Button:active
+    background-color: §basis-farbe-schwarz
+    color: $farbe-corporate-identity-2
+
+// Hyperlink-Animation
+#Navigation[data-farbschema="Hell"]
+  a::before
+    background-color: $farbe-corporate-identity-2
+
+#ArchivNavigation[data-farbschema="Hell"]
+  ul > li:hover, ul > li:focus, ul > li:active
+    background-color: $farbe-corporate-identity-2
+    color: §basis-farbe-schwarz
+
+#ResponsiveNavigationHeader[data-farbschema="Hell"]
+  #ResponsiveNavigationBurger > section
+    background-color: $farbe-corporate-identity-2
+
+#FooterDesignFestival[data-farbschema="Hell"]
+  a:hover, a:focus, a:active
+    color: §basis-farbe-schwarz
+
+#ObenButton
+  color: §basis-farbe-schwarz

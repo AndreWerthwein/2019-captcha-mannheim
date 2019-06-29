@@ -1,0 +1,74 @@
+@import ../variablen.sass
+
+[data-farbschema="Schwarz und Weiss"]
+  background-color: $farbe-basis-schwarz !important
+  color: $farbe-basis-weiss !important
+
+  // User-Selection
+  ::selection
+    background: $farbe-basis-transparent !important
+    color: $farbe-basis-schwarz !important
+
+  ::-moz-selection
+    background: $farbe-basis-schwarz !important
+    color: $farbe-basis-schwarz !important
+
+  // Scrollbars [innerhalb eines DIV-Elements]
+  ::-webkit-scrollbar-track
+    background-color: $farbe-basis-schwarz
+
+  ::-webkit-scrollbar-thumb:vertical
+    background: $farbe-basis-weiss
+
+  ::-webkit-scrollbar-thumb:horizontal
+    background: $farbe-basis-weiss
+
+  hr
+    background-color: $farbe-basis-weiss
+
+  .Workshop > header
+    background-color: $farbe-basis-weiss
+    color: $farbe-basis-schwarz
+
+  .Workshop > header:hover, .Workshop > header:focus, .Workshop > header:active
+    background-color: $farbe-basis-schwarz
+    color: $farbe-basis-weiss
+
+  .Workshop > section
+    background-color: $farbe-basis-schwarz
+    color: $farbe-basis-weiss
+
+  .fa, .fas, .fab
+    color: $farbe-basis-weiss !important
+
+  .PlayScreen > .fas
+    color: $farbe-basis-schwarz !important
+
+  .Button
+    background-color: $farbe-basis-weiss
+    color: $farbe-basis-schwarz
+
+  .Button:hover, .Button:focus, .Button:active
+    background-color: $farbe-basis-schwarz
+    color: $farbe-basis-weiss
+
+// Hyperlink-Animation
+#Navigation[data-farbschema="Hell"]
+  a::before
+    background-color: $farbe-basis-weiss
+
+#ArchivNavigation[data-farbschema="Hell"]
+  ul > li:hover, ul > li:focus, ul > li:active
+    background-color: $farbe-basis-weiss
+    color: $farbe-basis-schwarz
+
+#ResponsiveNavigationHeader[data-farbschema="Hell"]
+  #ResponsiveNavigationBurger > section
+    background-color: $farbe-basis-weiss
+
+#FooterDesignFestival[data-farbschema="Hell"]
+  a:hover, a:focus, a:active
+    color: $farbe-basis-schwarz
+
+#ObenButton
+  color: $farbe-basis-schwarz
