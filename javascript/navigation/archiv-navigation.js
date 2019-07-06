@@ -1,4 +1,4 @@
-var ArchivNavigationButton = document.querySelector('#Navigation > div > section:last-child');
+var ArchivNavigationButton = document.querySelector('#Navigation > section:last-child');
 var ArchivNavigation = document.querySelector('#ArchivNavigation');
 var ArchivNavigationJahre = parseInt(document.querySelectorAll('#ArchivNavigation > ul > li').length);
 

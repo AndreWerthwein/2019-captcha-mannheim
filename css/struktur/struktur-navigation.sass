@@ -14,27 +14,18 @@
   align-items: center
 
 #Navigation > section
-  width: calc(80vw * 0.4)
+  width: calc(80vw / 3)
+  text-align: center
 
 #Navigation > section > img
   height: 44.8px
-
-#Navigation > div
-  width: calc(80vw * 0.6)
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-#Navigation > div > section
-  width: calc(100%  / 5)
-  text-align: center
 
 #Navigation h6
   margin: 0px
 
 // Archiv-Navigation
 #ArchivNavigation
-  width: calc((80vw * 0.6) / 5)
+  width: calc((80vw / 3)
   height: 0px
   overflow: hidden
   position: fixed
@@ -98,7 +89,7 @@
   width: 100vw
   //height: 50vh
   overflow: hidden
-  padding: 25px 10vw
+  padding: 25px 10vw 0px 10vw !important
   position: fixed
   top: 94.8px
   left: 0px
@@ -112,7 +103,11 @@
 #ArchivRaster
   width: 100%
   display: grid
-  grid-template-columns: auto auto auto auto
+  grid-template-columns: auto auto auto
+  text-align: center
+
+#ArchivRaster > section
+  padding: 12px 0px
 
 // "Nach-Oben"-Button
 #ObenButton
