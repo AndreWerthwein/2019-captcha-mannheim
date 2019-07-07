@@ -164,32 +164,37 @@
   .Workshop > section > img, .Workshop > section > section
     width: 100% !important
 
-  // -------------------------------- //
+// -------------------------------- //
 
-  @media all and (max-width: 480px)
-    #FooterDesignFestival
-      flex-wrap: wrap
+@media all and (max-width: 550px)
+  #FooterDesignFestival
+    flex-wrap: wrap
 
-    #FooterDesignFestival > div
-      width: 100%
+  #FooterDesignFestival > div
+    width: 100%
 
-    #Rechtliches
-      margin: 25px 0px 0px 0px
+  #Rechtliches
+    margin: 25px 0px 0px 0px
 
-    #Rechtliches > h1, #Rechtliches > h2,  #Rechtliches > h3,  #Rechtliches > h4,  #Rechtliches > h5,  #Rechtliches > h6
-      display: none
+  #Rechtliches > h1, #Rechtliches > h2,  #Rechtliches > h3,  #Rechtliches > h4,  #Rechtliches > h5,  #Rechtliches > h6
+    display: none
 
-    #Rechtliches > ul
-      width: 100%
-      display: flex
-      justify-content: space-around
-      align-items: center
+  #Rechtliches > ul
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
 
-    .TeamKontakt > p
-      width: 100%
+// -------------------------------- //
 
-    .TeamKontakt > p:nth-child(even)
-      margin: 0px 0px 10px 0px
+@media all and (max-width: 480px)
+  .TeamKontakt > p
+    width: 100%
+
+  .TeamKontakt > p:nth-child(even)
+    margin: 0px 0px 10px 0px
+
+// -------------------------------- //
 
 @media (orientation: landscape)
   #KontaktSeite
