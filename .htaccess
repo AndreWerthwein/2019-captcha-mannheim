@@ -1,3 +1,12 @@
+# Spam-Blockade
+deny  *.sales.stand-on.com
+deny  *.hermanet.eu
+deny  *.worldintegration.int
+deny  *.mdsachintest.com
+deny  *.bizers.eu
+deny  *.buxheim.de
+
+
 # Browser Caching [nach Datentyp]
 <IfModule mod_expires.c>
     ExpiresActive on
