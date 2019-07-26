@@ -57,6 +57,11 @@
         <h6>Open Call</h6>
       </a>
     </section>
+    <section>
+      <a href="anmeldung.html">
+        <h6>Registration</h6>
+      </a>
+    </section>
     <!-- <section>
         <a href="team.html">
           <h6>Team</h6>
@@ -89,6 +94,9 @@
     </a>
     <a href="open-call.html">
       <h6>Open Call</h6>
+    </a>
+    <a href="anmeldung.html">
+      <h6>Registration</h6>
     </a>
     <!-- <a href="team.html">
       <h6>Team</h6>
@@ -142,7 +150,7 @@
         <hr />
       </header>
 
-      <form>
+      <form method="post" action="/php/anmeldung.php">
         <h6>Workshops</h6>
         <ol>
           <li>Workshop #1 &mdash; Workshopleader #1</li>
@@ -153,22 +161,21 @@
 
         <section>
           <label for="Nachname">Surname:</label>
-          <input type="text" name="Nachname" placeholder="Mustermann" />
-          <label for="Name">Name:</label>
-          <input type="text" name="Name" placeholder="Maxime" />
+          <input type="text" name="Nachname" placeholder="Mustermann" /required="true"> <label for="Name">Name:</label>
+          <input type="text" name="Name" placeholder="Maxime" required="true" />
           <label for="Hochschule">University:</label>
-          <input type="text" name="Hochschule" placeholder="Hochschule Mannheim" />
+          <input type="text" name="Hochschule" placeholder="Hochschule Mannheim" required="true" />
           <label for="EMail">E-Mail:</label>
-          <input type="text" name="EMail" placeholder="maxime.mustermann@muster.de" />
+          <input type="text" name="EMail" placeholder="maxime.mustermann@muster.de" required="true" />
         </section>
 
         <h6>Your Workshop</h6>
 
         <section>
           <label for="ErsteWahl">First Choice:</label>
-          <input type="text" name="ErsteWahl" placeholder="Number, Title or Leader" />
+          <input type="text" name="ErsteWahl" placeholder="Number, Title or Leader" required="true" />
           <label for="ZweiteWahl">Second Choice:</label>
-          <input type="text" name="ZweiteWahl" placeholder="Number, Title or Leader" />
+          <input type="text" name="ZweiteWahl" placeholder="Number, Title or Leader" required="true" />
         </section>
 
         <section class="Zusatzpakete">
