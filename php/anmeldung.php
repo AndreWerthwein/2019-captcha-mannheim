@@ -1,9 +1,9 @@
 <?php
 //Spam-Kontrolle, durch ein unsichtbares Formularfeld
-if(isset($_POST['Kontrolle']) && $_POST['Kontrolle']) {
-    //Abbruch, da Spam verdacht
-	header('Location: index.html');
-} else {
+// if(isset($_POST['Kontrolle']) && $_POST['Kontrolle']) {
+//     //Abbruch, da Spam verdacht
+// 	header('Location: index.html');
+// } else {
 
 //Platzhalter-Absender, falls kein Absender angegeben wurde.
 //Absender = Pflichtfeld (CSS, Java Script)
@@ -65,9 +65,9 @@ $msg = "$Tag, den $n.$Monat.$Jahr - $Time Uhr \n\n";
 while (list($name,$value) = each($_POST)) {
    //if-Clause-Abfrage, ob das Feld ingoriert werden soll.
    //Zu ignorierende Felder werden einzeln festgelegt.
-   if (in_array($name, $ignore_fields)) {
-        continue;
-   }
+   // if (in_array($name, $ignore_fields)) {
+   //      continue;
+   // }
    // "/n" beginnt eine neue Zeile
    //Hier wir der Mail-Body mit den Werten aus den Formularfeldern befüllt.
    //Nimm das Formularfeld beim name="" und ordne ihm den Inhalt vale="" zu.
@@ -96,5 +96,5 @@ if($mail_senden){
   header("Location: ".$url_error); //Fehler beim Senden
   exit();
 }
-  }
+//  }
 ?>
