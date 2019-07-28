@@ -1,13 +1,13 @@
 <?php
 //Spam-Kontrolle, durch ein unsichtbares Formularfeld
-if(isset($_POST['Kontrolle']) && $_POST['Kontrolle']) {
-    //Abbruch, da Spam verdacht
-	header('Location: index.html');
-} else {
+// if(isset($_POST['Kontrolle']) && $_POST['Kontrolle']) {
+//     //Abbruch, da Spam verdacht
+// 	header('Location: index.html');
+// } else {
 
 //Platzhalter-Absender, falls kein Absender angegeben wurde.
 //Absender = Pflichtfeld (CSS, Java Script)
-$email_from = "hello@captcha-mannheim.de";
+$email_from = "team@captcha-mannheim.de";
 
 //Sender-e-Mail-Adresse als Absender
 $sendermail_antwort = true;
@@ -22,16 +22,16 @@ $empfaenger = "hello@captcha-mannheim.de";
 $mail_cc = "";
 
 //Betreff der e-Mail
-$betreff = "Kontaktanfrage über die Website";
+$betreff = "Es gab eine neue Nachricht";
 
 //Erfolgsmeldung — e-Mail-Versand
-$url_versand = "index.html";
+$url_versand = "erfolg.html";
 
 //Umleitung auf Startseite
 $url_home = "index.html";
 
 //Errormeldung - Bei fehlerhaftem Versand
-$ulr_error = "index.html";
+$ulr_error = "error.html";
 
 //Datum, wann die Mail erstellt wurde
 //Füllen eines Arrays mit den Wochentagen zur Zuweisung durch PHP
@@ -65,9 +65,9 @@ $msg = "$Tag, den $n.$Monat.$Jahr - $Time Uhr \n\n";
 while (list($name,$value) = each($_POST)) {
    //if-Clause-Abfrage, ob das Feld ingoriert werden soll.
    //Zu ignorierende Felder werden einzeln festgelegt.
-   if (in_array($name, $ignore_fields)) {
-        continue;
-   }
+   // if (in_array($name, $ignore_fields)) {
+   //      continue;
+   // }
    // "/n" beginnt eine neue Zeile
    //Hier wir der Mail-Body mit den Werten aus den Formularfeldern befüllt.
    //Nimm das Formularfeld beim name="" und ordne ihm den Inhalt vale="" zu.
@@ -96,5 +96,5 @@ if($mail_senden){
   header("Location: ".$url_error); //Fehler beim Senden
   exit();
 }
-  }
+//  }
 ?>

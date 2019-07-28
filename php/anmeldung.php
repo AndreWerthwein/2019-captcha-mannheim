@@ -25,13 +25,13 @@ $mail_cc = "";
 $betreff = "Es gab eine neue Registrierung für einen der Workshops";
 
 //Erfolgsmeldung — e-Mail-Versand
-$url_versand = "index.html";
+$url_versand = "erfolg.html";
 
 //Umleitung auf Startseite
 $url_home = "index.html";
 
 //Errormeldung - Bei fehlerhaftem Versand
-$ulr_error = "index.html";
+$ulr_error = "error.html";
 
 //Datum, wann die Mail erstellt wurde
 //Füllen eines Arrays mit den Wochentagen zur Zuweisung durch PHP
