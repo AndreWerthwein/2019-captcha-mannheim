@@ -1,1 +1,107 @@
 @import ../variablen.sass
+
+input[type="submit"]
+  width: 0px
+  height: 0px
+  visibility: hidden
+  opacity: 0
+
+input[type="text"]
+  -webkit-appearance: none
+  appearance: none
+  font-size: 1em
+  padding: 2px
+  border: 2px $farbe-corporate-identity-1 solid
+  color: $farbe-corporate-identity-1
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+
+input[type="text"]::placeholder
+  color: $farbe-corporate-identity-1
+
+input[type="text"]:focus
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+input[type="text"]:focus::placeholder
+  color: $farbe-corporate-identity-2 !important
+
+input[type="text"]:valid
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+input[type="checkbox"]
+  -webkit-appearance: none
+  appearance: none
+  width: 20px
+  height: 20px
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+  background-color: $farbe-corporate-identity-2
+  border: 2px $farbe-corporate-identity-1 solid
+
+input[type="checkbox"]:checked
+  background-color: $farbe-corporate-identity-1 !important
+
+textarea
+  width: calc(100% - 145px)
+  height: 200px
+  -webkit-transition: all 0.4s ease-in
+  -moz-transition: all 0.4s ease-in
+  -o-transition: all 0.4s ease-in
+  transition: all 0.4s ease-in
+  background-color: $farbe-corporate-identity-2
+  border: 2px $farbe-corporate-identity-1 solid
+
+textarea:focus
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+textarea:valid
+  background-color: $farbe-corporate-identity-1 !important
+  color: $farbe-corporate-identity-2 !important
+
+.FormularFelder
+  margin: 0px 0px 25px 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.FormularFelder > label
+  width: 120px
+  margin: 0px 0px 10px 0px
+  flex: 0 0 auto
+
+.FormularFelder > input
+  width: calc(100% - 145px)
+  margin: 0px 0px 10px 0px
+  flex: 0 0 auto
+
+.Nachricht
+  margin: 0px 0px 25px 0px
+  display: flex
+  justify-content: space-between
+  align-items: top !important
+  flex-wrap: wrap
+
+.Zusatzpakete
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.Zusatzpakete > input
+  width: 20px !important
+  height: 20px !important
+  margin: 0px 0px 10px 0px !important
+  flex: 0 0 auto
+
+.Zusatzpakete > label
+  width: calc(100% - 45px) !important
+  margin: 0px 0px 10px 25px !important
+  flex: 0 0 auto

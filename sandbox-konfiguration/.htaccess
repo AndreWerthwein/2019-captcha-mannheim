@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Bitte einloggen"
+AuthUserFile /www/htdocs/w0144db7/captcha-mannheim.de/SANDBOX/.htpasswd
+
+require valid-user
