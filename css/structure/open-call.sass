@@ -1,0 +1,53 @@
+@import ../variables.sass
+
+// Open-Call
+#OpenCallVideoInformation
+  width: 100vw
+  padding: 0px
+  margin: 94.8px 0px 0px 0px
+  display: flex
+  justify-content: space-between
+  align-items: top
+  flex-wrap: wrap
+  z-index: -1 !important
+
+#OpenCallVideoInformation > section:first-child
+  width: calc(100vh - 94.8px)
+  height: calc(100vh - 94.8px)
+
+#OpenCallVideoInformation > section:last-child
+  width: calc(100vw - (100vh - 94.8px))
+  height: calc(100vh - 94.8px)
+
+#OpenCallVideoInformation > section:first-child > section
+  margin: 0px 0px calc((100vh - 94.8px) * (-1)) 0px
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+#OpenCallVideoInformation > section:first-child > section > .fas
+  font-size: 3rem
+
+#OpenCallVideoInformation > section
+  flex: 0 0 auto
+
+.PlayScreen, #OpenCallVideoInformation > section > video
+  width: calc(100vh - 94.8px)
+  height: calc(100vh - 94.8px)
+  z-index: -1
+
+#OpenCallVideoInformation > section:last-child
+  padding: 25px
+
+#OpenCallVideoInformation > section > header
+  text-align: center
+
+#OpenCallVideoInformation > section > header:not(:first-child), #OpenCallVideoInformation > section > header:not(:first-child), #OpenCallVideoInformation > section > header:not(:first-child), #OpenCallVideoInformation > section > header:not(:first-child), #OpenCallVideoInformation > section > header:not(:first-child), #OpenCallVideoInformation > section > header:not(:first-child)
+  margin: 50px 0px 0px 0px
+
+#OpenCallVideoHinweis
+  width: 100vw
+  padding: 25px 10vw
+
+#OpenCallVideoHinweis > section
+  width: calc(50% - 12.5px)

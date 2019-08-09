@@ -19,13 +19,13 @@ $emailsender = "eMail";
 $empfaenger = "team@captcha-mannheim.de";
 
 //Empfänger einer Kopie des Kontaktformulars
-$mail_cc = "";
+$mail_cc = $_POST['eMail'];
 
 //Betreff der e-Mail
-$betreff = "Es gab eine neue Registrierung für einen der Workshops";
+$betreff = "Registration Inquiry on »CAPCHTA Designfestival«";
 
 //Erfolgsmeldung — e-Mail-Versand
-$url_versand = "erfolg.html";
+$url_versand = "success.html";
 
 //Umleitung auf Startseite
 $url_home = "index.html";
@@ -36,13 +36,13 @@ $ulr_error = "error.html";
 //Datum, wann die Mail erstellt wurde
 //Füllen eines Arrays mit den Wochentagen zur Zuweisung durch PHP
 $name_Tag = array();
-$name_Tag[0] = "Sonntag";
-$name_Tag[1] = "Montag";
-$name_Tag[2] = "Dienstag";
-$name_Tag[3] = "Mittwoch";
-$name_Tag[4] = "Donnerstag";
-$name_Tag[5] = "Freitag";
-$name_Tag[6] = "Samstag";
+$name_Tag[0] = "Sunday";
+$name_Tag[1] = "Monday";
+$name_Tag[2] = "Tuesday";
+$name_Tag[3] = "Wednesday";
+$name_Tag[4] = "Thursday";
+$name_Tag[5] = "Friday";
+$name_Tag[6] = "Saturday";
 
 //Abrufen des aktuellen Tages
 $num_Tag = date("w");

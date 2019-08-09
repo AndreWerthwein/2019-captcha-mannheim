@@ -1,3 +1,9 @@
+# Weiterleitung von alten URLs
+Redirect /anmeldung.html https://captcha-mannheim.de/registration.html
+Redirect /kontakt.html https://captcha-mannheim.de/contact.html
+Redirect /datenschutz.html https://captcha-mannheim.de/privacy-policy.html
+Redirect /impressum.html https://captcha-mannheim.de/imprint.html
+
 # Browser Caching [nach Datentyp]
 <IfModule mod_expires.c>
     ExpiresActive on
