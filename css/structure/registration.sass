@@ -36,3 +36,41 @@
 
 #AnmeldungHinweis > section
   width: calc(50% - 12.5px)
+
+#WorkshopInformationen
+  width: 100vw
+  padding: 0px
+  margin: 94.8px 0px 0px 0px
+  display: flex
+  justify-content: space-between
+  align-items: top
+  flex-wrap: wrap
+  z-index: -1 !important
+
+#WorkshopInformationen > section:first-child
+  width: calc(100vh - 94.8px)
+  height: calc(100vh - 94.8px)
+
+#WorkshopInformationen > section:last-child
+  width: calc(100vw - (100vh - 94.8px))
+  height: calc(100vh - 94.8px)
+
+#WorkshopInformationen > section:first-child > section
+  margin: 0px 0px calc((100vh - 94.8px) * (-1)) 0px
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.PlayScreen, #WorkshopInformationen > section > video
+  width: calc(100vh - 94.8px)
+  height: calc(100vh - 94.8px)
+  z-index: -1
+
+#WorkshopInformationen > section:last-child
+  padding: 25px
+
+#WorkshopInformationen > section > header
+  text-align: center
+
+#WorkshopInformationen > section > header:not(:first-child), #WorkshopInformationen > section > header:not(:first-child), #WorkshopInformationen > section > header:not(:first-child), #WorkshopInformationen > section > header:not(:first-child), #WorkshopInformationen > section > header:not(:first-child), #WorkshopInformationen > section > header:not(:first-child)
+  margin: 50px 0px 0px 0px

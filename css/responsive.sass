@@ -14,7 +14,7 @@
   .RedundanteInformation
     display: none
 
-  #Navigation, #ResponsiveNavigation, #ResponsiveNavigationHeader, #VeranstaltungsDatum, #VorstellungDesignFestival, #AufbauDesignFestival, #GaesteTrenner, #GaesteDesignFestival, #FooterDesignFestival, #DanksagungTeamDesignFestival, #TeamDesignFestival, #ImpressumKontakt, #Impressum, #TeamDesignFestival, .Datenschutz, .Kontakt, #OpenCallVideoHinweis
+  #Navigation, #ResponsiveNavigation, #ResponsiveNavigationHeader, #VeranstaltungsDatum, #VorstellungDesignFestival, #AufbauDesignFestival, #GaesteTrenner, #GaesteDesignFestival, #FooterDesignFestival, #DanksagungTeamDesignFestival, #TeamDesignFestival, #ImpressumKontakt, #Impressum, #TeamDesignFestival, .Datenschutz, .Kontakt, #OpenCallVideoHinweis, #SponsorenRaster
     padding: 25px 5vw
 
   #Navigation, #ArchivNavigation
@@ -26,60 +26,64 @@
   #TeamDesignFestival
     grid-template-columns: 100%
 
-  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, #AnmeldungInformation > section:first-child
+  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, #AnmeldungInformation > section:first-child, #WorkshopInformationen > section:first-child
     width: 50vw
     height: 50vw
 
   #OpenCallVideoInformation > section:first-child video
     width: 100%
 
-  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child
+  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child, #WorkshopInformationen > section:last-child
     width: 50vw
     height: 50vw
     padding: 25px 25px 0px 12.5px
 
-  #OpenCallVideoInformation > section:first-child > section, #AnmeldungInformation > section:first-child > section
+  #OpenCallVideoInformation > section:first-child > section, #AnmeldungInformation > section:first-child > section, #WorkshopInformationen > section:first-child > section
     margin: 0px 0px calc((50vw - 12.5px) * (-1)) 0px
 
 // -------------------------------- //
 
 @media all and (max-width: 1040px)
-  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, , #AnmeldungInformation > section:first-child
+  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, , #AnmeldungInformation > section:first-child, #WorkshopInformationen > section:first-child
     width: 40vw
     height: 40vw
 
   #OpenCallVideoInformation > section:first-child video
     width: 100%
 
-  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child
+  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child, #WorkshopInformationen > section:last-child
     width: 60vw
     height: 40vw
     padding: 25px 25px 0px 12.5px
     overflow-y: auto
 
-  #OpenCallVideoInformation > section:first-child > section, #AnmeldungInformation > section:first-child > section
+  #OpenCallVideoInformation > section:first-child > section, #AnmeldungInformation > section:first-child > section, #WorkshopInformationen > section:first-child > section
     margin: 0px 0px calc((40vw - 12.5px) * (-1)) 0px
 
 @media all and (max-width: 900px)
-  #Navigation, #ResponsiveNavigation, #ResponsiveNavigationHeader, #VeranstaltungsDatum, #VorstellungDesignFestival, #AufbauDesignFestival, #GaesteTrenner, #GaesteDesignFestival, #FooterDesignFestival, #DanksagungTeamDesignFestival, #TeamDesignFestival, #ImpressumKontakt, #Impressum, #TeamDesignFestival, .Datenschutz, .Kontakt, #OpenCallVideoHinweis
+  #Navigation, #ResponsiveNavigation, #ResponsiveNavigationHeader, #VeranstaltungsDatum, #VorstellungDesignFestival, #AufbauDesignFestival, #GaesteTrenner, #GaesteDesignFestival, #FooterDesignFestival, #DanksagungTeamDesignFestival, #TeamDesignFestival, #ImpressumKontakt, #Impressum, #TeamDesignFestival, .Datenschutz, .Kontakt, #OpenCallVideoHinweis, #SponsorenRaster
     padding: 25px
+
+  #SponsorenRaster > section:nth-child(13),
+  #SponsorenRaster > section:nth-child(14)
+    margin: 0px 0px -20px 0px !important
 
   #VorstellungDesignFestival > section > img
     width: 60% !important
 
-  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, #AnmeldungInformation > section:first-child
+  #OpenCallVideoInformation > section:first-child, .PlayScreen, #OpenCallVideoInformation > section > video, #AnmeldungInformation > section:first-child, #WorkshopInformationen > section:first-child
     width: 100vw
     height: auto
 
   #OpenCallVideoInformation > section:first-child video
     width: 100%
 
-  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child
+  #OpenCallVideoInformation > section:last-child, #AnmeldungInformation > section:last-child, #WorkshopInformationen > section:last-child
     width: 100vw
     height: auto
     padding: 25px
 
-  #OpenCallVideoInformation > section:first-child > section,, #AnmeldungInformation > section:first-child > section
+  #OpenCallVideoInformation > section:first-child > section,, #AnmeldungInformation > section:first-child > section, #WorkshopInformationen > section:first-child > section
     margin: 0px 0px calc((100vw) * (-1)) 0px
 
 // -------------------------------- //
@@ -90,6 +94,9 @@
 
   #AufbauDesignFestival > div:first-child, #AufbauDesignFestival > div:nth-child(2)
     width: calc(50% - (25px / 2))
+
+  #SponsorenRaster > section
+    width: calc((100% / 3) - (50px / 3))
 
   #AufbauDesignFestival > div:last-child
     width: 100%
@@ -125,6 +132,15 @@
 
   .Datenschutz > div, .ZweiSpalten > section, .Kontakt > div, #KontaktSeite > div, #OpenCallVideoHinweis > div
     width: 100% !important
+
+// -------------------------------- //
+@media all and (max-width: 620px)
+  #SponsorenRaster > section
+    width: calc((100% / 2) - 25px)
+
+  .hochschule-mannheim > img,
+  .startup-mannheim > img
+    width: 100%
 
 // -------------------------------- //
 
@@ -185,9 +201,6 @@
     justify-content: space-around
     align-items: center
 
-// -------------------------------- //
-
-@media all and (max-width: 480px)
   .TeamKontakt > p
     width: 100%
 
